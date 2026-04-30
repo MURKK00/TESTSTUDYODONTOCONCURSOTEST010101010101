@@ -1,0 +1,604 @@
+# Simulado de Estudo – Cirurgião Dentista Clínico Geral  
+## Foco: Senador Canedo / Instituto Verbena
+
+---
+
+## Bloco 1 – Clínica básica (1–25)
+
+1. Segundo a classificação de Black para cáries, a **Classe I** diz respeito a:
+   a) cáries em superfícies proximais de pré‑molares e molares.  
+   b) cáries em fossas e fissuras oclusais de pré‑molares e molares.  
+   c) cáries em superfícies vestibulares e linguais de dentes anteriores.  
+   d) cáries em superfícies proximais de dentes anteriores.  
+   **Gabarito:** b  
+
+2. Em uma restauração com resina composta em classe I, qual é uma indicação correta para uso de **adaptação cavitária**?
+   a) prevenir fratura do esmalte em cérvice de molares.  
+   b) reduzir a contração de polimerização e estresse na interface.  
+   c) aumentar a profundidade da cavidade para mais adesivo.  
+   d) evitar a necessidade de isolamento absoluto.  
+   **Gabarito:** b  
+
+3. O principal objetivo da **pulpectomia** em dentes decíduos é:
+   a) manter a vitalidade da polpa coronária.  
+   b) remover a polpa coronária e parte da radicular, mantendo a polpa apical vital.  
+   c) remover toda a polpa, permitindo a reabsorção fisiológica da raiz.  
+   d) apenas aliviar a dor aguda, sem comprometer a resorção.  
+   **Gabarito:** c  
+
+4. Na **periodontite crônica**, o achado radiográfico mais comum é:
+   a) espessamento da lâmina dura.  
+   b) perda óssea vertical e angular.  
+   c) ausência de perda óssea.  
+   d) osteoesclerose difusa.  
+   **Gabarito:** b  
+
+5. A técnica de **condensação térmica lateral em endodontia** é indicada principalmente quando:
+   a) o canal é muito amplo e retilíneo.  
+   b) se deseja maior previsibilidade em canais estreitos e curvados.  
+   c) não há disponível material de guta‑percha.  
+   d) o dentista pretende fazer apenas obturação com cimento.  
+   **Gabarito:** b  
+
+6. O uso de **sealants (selantes de fissura)** é mais eficaz quando realizado:
+   a) apenas em dentes temporários.  
+   b) em superfícies lisas e interprossimensionais.  
+   c) em superfícies oclusais de molares e pré‑molares recém‑eruptos.  
+   d) como substituto da escovação.  
+   **Gabarito:** c  
+
+7. A principal causa de **fratura vertical de raiz** em dentes restaurados é:
+   a) má oclusão sem tratamento.  
+   b) restaurações extensivas sem retenção, com grande estresse oclusal.  
+   c) uso de antissépticos em excesso.  
+   d) preservação de coroa dentária.  
+   **Gabarito:** b  
+
+8. O material de **ionômero de vidro** é mais indicado em:
+   a) restaurações oclusais em dentes posteriores com alta carga mastigatória.  
+   b) cavidades proximais de dentes anteriores com alta estética.  
+   c) cavidades tipo III em dentes anteriores com baixa carga.  
+   d) áreas de abrasão cervical quando se deseja liberação de flúor e adesão química ao esmalte/dentina.  
+   **Gabarito:** d  
+
+9. Em um caso de **lesão de cárie incipiente**, a conduta mais conservadora é:
+   a) restauração imediata com resina.  
+   b) restauração com amálgama.  
+   c) remineralização com flúor tópico e controle de dieta.  
+   d) extração do dente.  
+   **Gabarito:** c  
+
+10. O diagnóstico de **pulpotomia em dentes decíduos** feito com sucesso exige:
+    a) pulpa exposta e sangrante, com resposta negativa à percussão.  
+    b) ausência de abscesso dentoalveolar e vitalidade pulpar mantida.  
+    c) presença de dor persistente e radiolucência periapical.  
+    d) uso obrigatório de anestesia local.  
+    **Gabarito:** b  
+
+11. A **gingivite** se caracteriza clinicamente por:
+    a) perda óssea alveolar.  
+    b) bolsas periodontais profundas.  
+    c) sangramento gengival, vermelhidão e edema, sem comprometimento ósseo.  
+    d) mobilidade dental acentuada.  
+    **Gabarito:** c  
+
+12. O uso de **lasers em odontologia** pode ser indicado, principalmente, para:
+    a) substituição de todos os instrumentos rotatórios.  
+    b) cirurgias de alta carga óssea sem necessidade de hemostasia.  
+    c) fotocoagulação, hemostasia e descontaminação de tecidos moles.  
+    d) eliminação de toda anestesia.  
+    **Gabarito:** c  
+
+13. O tratamento de **periodontite agressiva** em pacientes jovens deve priorizar:
+    a) apenas controle de placa.  
+    b) controle de placa, rasamento radicular, antibioticoterapia e acompanhamento.  
+    c) extração dos dentes afetados.  
+    d) uso de clareamento dentário.  
+    **Gabarito:** b  
+
+14. O material de **guta‑percha** é indicado principalmente em:
+    a) restaurações coronárias.  
+    b) obturação de canal radicular.  
+    c) cimentação de próteses.  
+    d) fundos de cavidade.  
+    **Gabarito:** b  
+
+15. A **lesão de cárie ativa** pode ser diferenciada da **lesão inativa** principalmente por:
+    a) cor mais escura do esmalte.  
+    b) superfície rugosa e facilmente penetrada por explorador.  
+    c) superfície lisa e polida, sem alteração de cor.  
+    d) ausência de mancha.  
+    **Gabarito:** b  
+
+16. O uso de **adhesivos dentinários de 3 passos** implica:
+    a) condicionamento, primer e adesivo em uma única etapa.  
+    b) condicionamento, aplicação de primer e adesivo em etapas separadas.  
+    c) apenas aplicação de adesivo sem condicionamento.  
+    d) condicionamento com água destilada apenas.  
+    **Gabarito:** b  
+
+17. O principal objetivo da **profilaxia profissional** é:
+    a) clarear os dentes.  
+    b) remover biofilme, tártaro e pigmentações.  
+    c) aplicar anestésico em pacientes sensíveis.  
+    d) restaurar dentes com cárie extensa.  
+    **Gabarito:** b  
+
+18. Em caso de **fratura coronária com exposição pulpar**, a conduta mais indicada é:
+    a) restauração com resina sem isolamento.  
+    b) pulpotomia ou pulpectomia, dependendo do dente e da idade.  
+    c) observação sem tratamento.  
+    d) aplicação de pasta de flúor apenas.  
+    **Gabarito:** b  
+
+19. O **cementário** é um tecido que:
+    a) recobre o esmalte.  
+    b) recobre a raiz do dente.  
+    c) compõe a polpa dentária.  
+    d) preenche a cavidade da coroa.  
+    **Gabarito:** b  
+
+20. A **erosão dentária** é tipicamente associada a:
+    a) consumo excessivo de água.  
+    b) ingestão frequente de bebidas ácidas.  
+    c) uso de flúor em alta concentração.  
+    d) escovação suave.  
+    **Gabarito:** b  
+
+21. O uso de **cimento de ionômero de vidro** como base apresenta a vantagem de:
+    a) ser altamente polimerizável sob luz.  
+    b) liberar flúor e apresentar adesão a dentina e esmalte.  
+    c) ter alta resistência ao cisalhamento.  
+    d) servir apenas como material de vedação.  
+    **Gabarito:** b  
+
+22. Em um dente com **dor pulsátil espontânea e sensibilidade à percussão**, a suspeita diagnóstica mais provável é:
+    a) cárie superficial.  
+    b) pulpite reversível.  
+    c) pulpite irreversível com possível comprometimento periapical.  
+    d) abrasão cervical.  
+    **Gabarito:** c  
+
+23. O **controle ideal da cárie** deve incluir:
+    a) apenas restaurações precoces.  
+    b) flúor, controle de placa, dieta e aplicação de selantes.  
+    c) apenas uso de creme dental sem flúor.  
+    d) extração de todos os dentes com mancha.  
+    **Gabarito:** b  
+
+24. O principal objetivo da **aplanagem radicular** em periodontia é:
+    a) aumentar a altura da gengiva.  
+    b) remover cálculo subgengival e cimentário alterado, promovendo reatamento do tecido.  
+    c) clarear radicular.  
+    d) eliminar a necessidade de escovação.  
+    **Gabarito:** b  
+
+25. O uso de **resina composta em restaurações estéticas** requer:
+    a) sempre isolamento absoluto com dique de borracha.  
+    b) isolamento relativo, bom controle de umidade e técnica adesiva adequada.  
+    c) ausência de isolamento.  
+    d) apenas condensação com instrumento de aço inoxidável.  
+    **Gabarito:** b  
+
+---
+
+## Bloco 2 – Saúde bucal coletiva, SUS e Brasil Sorridente (26–40)
+
+26. O programa **Brasil Sorridente** visa principalmente:
+    a) ampliar a oferta de implantes.  
+    b) universalizar o acesso à atenção odontológica básica e ampliar a oferta de procedimentos.  
+   c) apenas promover cirurgias estéticas.  
+   d) concentrar cuidados em grandes centros privados.  
+   **Gabarito:** b  
+
+27. O **Sistema Único de Saúde (SUS)** é regido pelos princípios de:
+   a) lucratividade e prestação seletiva de serviços.  
+   b) universalidade, integralidade e equidade.  
+   c) exclusividade de atendimento privado.  
+   d) atendimento apenas em regime de pronto‑atendimento.  
+   **Gabarito:** b  
+
+28. Em equipes de saúde bucal no SUS, o **cirurgião‑dentista** integra principalmente:
+   a) apenas serviços de radiologia.  
+   b) equipes de saúde da família, com foco em prevenção e atendimento odontológico.  
+   c) somente serviços odontológicos privados.  
+   d) apenas laboratórios odontológicos.  
+   **Gabarito:** b  
+
+29. O indicador de **CPO‑D** representa:
+   a) o número de cáries, perdas e obturações por dentes.  
+   b) o número de escovas de dentes por dentista.  
+   c) o número de consultas realizadas.  
+   d) o número de aparelhos ortodônticos.  
+   **Gabarito:** a  
+
+30. A **promoção da saúde bucal** em escolas deve priorizar:
+   a) apenas tratamento restaurador.  
+   b) escovação supervisionada, educação em saúde, alimentação adequada e flúor.  
+   c) apenas aplicação de selantes em todos os dentes.  
+   d) somente palestras sem interação.  
+   **Gabarito:** b  
+
+31. A **política nacional de saúde bucal** inclui como eixo:
+   a) exclusão de serviços odontológicos.  
+   b) ações de promoção, prevenção, diagnóstico e tratamento, com ênfase na atenção primária.  
+   c) manutenção apenas de serviços terciários.  
+   d) aumento de procedimentos de alto custo.  
+   **Gabarito:** b  
+
+32. O **flúor** é indicado na prevenção de cárie porque:
+   a) aumenta a formação de placa.  
+   b) promove remineralização e inibe o metabolismo bacteriano.  
+   c) elimina a necessidade de escovação.  
+   d) clareia dentes permanentes sem efeito anticárie.  
+   **Gabarito:** b  
+
+33. As **ações de saúde bucal coletiva** incluem:
+   a) apenas atendimento individual em consultório.  
+   b) campanhas de vacinação sistêmica.  
+   c) campanhas de educação, controle de cárie, aplicação de flúor e controle gengival.  
+   d) somente extrações.  
+   **Gabarito:** c  
+
+34. O **controle de infecção** em consultório odontológico é responsabilidade:
+   a) apenas da equipe de limpeza.  
+   b) apenas do cirurgião‑dentista.  
+   c) do cirurgião‑dentista e de toda a equipe de saúde.  
+   d) dos pacientes.  
+   **Gabarito:** c  
+
+35. O **programa de saúde bucal** em postos de saúde deve contemplar:
+   a) apenas atendimento curativo.  
+   b) apenas atendimento estético.  
+   c) prevenção, diagnóstico, tratamento e educação em saúde.  
+   d) apenas construção de laboratórios.  
+   **Gabarito:** c  
+
+36. O atendimento de **odontologia para pacientes com deficiência** deve ser pautado em:
+   a) exclusão de procedimentos.  
+   b) adaptação de rotina, linguagem e técnica ao nível de necessidade do paciente.  
+   c) realização de procedimentos mais invasivos.  
+   d) realização apenas de extrações.  
+   **Gabarito:** b  
+
+37. A **atenção primária** em saúde bucal é caracterizada por:
+   a) atendimento exclusivo de alta complexidade.  
+   b) resolução de problemas simples, encaminhamento criterioso e prevenção.  
+   c) ausência de diagnóstico precoce.  
+   d) exclusão de crianças.  
+   **Gabarito:** b  
+
+38. O **controle de cárie nas escolas** pode ser feito por meio de:
+   a) apenas distribuição de escovas.  
+   b) aplicação de flúor tópico, escovação supervisionada e educação alimentar.  
+   c) aplicação de anestesia tópica.  
+   d) apenas extrações de dentes decíduos.  
+   **Gabarito:** b  
+
+39. A **educação em saúde** na atenção básica odontológica deve:
+   a) ser opcional.  
+   b) orientar sobre higiene, dieta, uso de flúor e necessidade de consulta periódica.  
+   c) focar apenas em adultos.  
+   d) evitar a participação da família.  
+   **Gabarito:** b  
+
+40. O **controle de cárie** em coletividades é mais eficaz quando:
+    a) ocorre somente em clínicas privadas.  
+    b) se baseia em fluoretação, educação em saúde e controle de placa.  
+    c) se limita a restaurações de alta complexidade.  
+    d) exclui a participação da escola.  
+    **Gabarito:** b  
+
+---
+
+## Bloco 3 – Biossegurança, ética e legislação odontológica (41–60)
+
+41. O uso de **EPI (Equipamento de Proteção Individual)** em consultório odontológico é obrigatório porque:
+    a) reduz conforto do paciente.  
+    b) protege profissional e paciente de risco biológico.  
+    c) aumenta custo desnecessário.  
+    d) elimina a necessidade de lavar as mãos.  
+    **Gabarito:** b  
+
+42. A **esterilização de instrumentais** por autoclave a vapor é indicada porque:
+    a) elimina apenas partículas de sujeira.  
+    b) inativa microrganismos patogênicos por calor úmido.  
+    c) apenas descora o metal.  
+    d) dispensa limpeza prévia.  
+    **Gabarito:** b  
+
+43. A **lavagem das mãos** antes e após o atendimento é considerada:
+    a) opcional, pois o uso de luva é suficiente.  
+    b) etapa primária para prevenção de infecções cruzadas.  
+    c) apenas recomendada para procedimentos cirúrgicos.  
+    d) apenas para pacientes hospitalizados.  
+    **Gabarito:** b  
+
+44. O **riego de aeroesol** em odontologia é reduzido utilizando‑se:
+    a) apenas alta rotação sem controle.  
+    b) alta rotação, baixa rotação e aspiração de alta velocidade.  
+    c) uso de água em alta pressão.  
+    d) ausência de isolamento.  
+    **Gabarito:** b  
+
+45. O **gerenciamento de resíduos odontológicos** é regulamentado por:
+    a) normas exclusivamente privadas.  
+    b) normas de biossegurança, ABNT e legislação de saúde pública.  
+    c) apenas pelo CRO.  
+    d) apenas pelo SUS.  
+    **Gabarito:** b  
+
+46. O **Código de Ética Odontológica** proíbe:
+    a) atendimento a pacientes sem documentos.  
+    b) atos que possam submeter o paciente a risco desnecessário, sem benefício clínico.  
+    c) atendimento em serviço público.  
+    d) trabalho em equipes multidisciplinares.  
+    **Gabarito:** b  
+
+47. A **responsabilidade civil** do cirurgião‑dentista em erro de conduta implica:
+    a) apenas advertência verbal.  
+    b) possibilidade de reparação por danos materiais e morais.  
+    c) obrigação apenas de voltar a atender o paciente.  
+    d) exclusão do tratamento.  
+    **Gabarito:** b  
+
+48. O **registro no CRO** é obrigatório para o exercício profissional porque:
+    a) serve apenas para controlar o número de odontólogos.  
+    b) comprova a qualificação legal e habilitação ética para atuar.  
+    c) dispensa formação acadêmica.  
+    d) permite atuar em qualquer área sem supervisão.  
+    **Gabarito:** b  
+
+49. A **documentação odontológica** é indispensável porque:
+    a) aumenta custo de material.  
+    b) garante continuidade do tratamento, controle de condutas e respaldo legal.  
+    c) é apenas para formulários estéticos.  
+    d) substitui a necessidade de diálogo com o paciente.  
+    **Gabarito:** b  
+
+50. A **confidencialidade das informações do paciente** deve ser mantida:
+    a) apenas em consultórios particulares.  
+    b) em todos os ambientes, inclusive serviço público.  
+    c) apenas em prontuários eletrônicos.  
+    d) quando o paciente autoriza a divulgação.  
+    **Gabarito:** b  
+
+51. O **informed consent (consentimento informado)** em odontologia deve:
+    a) ser verbal apenas.  
+    b) ser claro, por escrito ou registrado, explicando riscos e benefícios.  
+    c) ser obtido apenas em cirurgias.  
+    d) dispensar discussão com o paciente.  
+    **Gabarito:** b  
+
+52. O **uso de flúor** em odontologia pública é considerado um princípio de:
+    a) lucratividade.  
+    b) promoção e prevenção em saúde coletiva.  
+    c) exclusão de pacientes.  
+    d) exclusão de intervenções clínicas.  
+    **Gabarito:** b  
+
+53. A **legislação vigente** sobre saúde bucal inclui:
+    a) apenas normas internacionais.  
+    b) normas brasileiras como SUS, lei de saúde bucal e portarias específicas.  
+    c) apenas normas de estética dental.  
+    d) exclusivamente normas de higiene.  
+    **Gabarito:** b  
+
+54. A **ética profissional** em saúde pública orienta que o acesso aos serviços seja:
+    a) apenas para grupos sociais privilegiados.  
+    b) conforme a capacidade de pagamento.  
+    c) justo, equitativo e sem discriminação.  
+    d) somente via planos de saúde.  
+    **Gabarito:** c  
+
+55. O **controle de infecção em ambiente odontológico** deve incluir:
+    a) apenas limpeza superficial de superfícies.  
+    b) limpeza, desinfecção, esterilização e uso correto de EPI.  
+    c) uso de instrumentais sem lavagem.  
+    d) ausência de registro de procedimentos.  
+    **Gabarito:** b  
+
+56. O **ataque de agente etiológico** (bactérias cariogênicas) pode ser reduzido por:
+    a) maior consumo de açúcar entre as refeições.  
+    b) controle de dieta, higiene oral e uso de flúor.  
+    c) diminuição da cepa de bactérias.  
+    d) apenas uso de antibióticos.  
+    **Gabarito:** b  
+
+57. A **lei que estabelece normas de responsabilidade sanitária** em saúde pública é pautada em:
+    a) exclusividade do setor privado.  
+    b) responsabilidade compartilhada entre Estado, profissionais e sociedade.  
+    c) exclusão de pacientes.  
+    d) ausência de supervisão.  
+    **Gabarito:** b  
+
+58. O **atendimento de odontologia em serviço público** deve priorizar:
+    a) atendimento somente em horário comercial.  
+    b) atendimento humano, integral e resolutivo.  
+    c) exclusão de pacientes com necessidades especiais.  
+    d) apenas atendimento estético.  
+    **Gabarito:** b  
+
+59. A **legislação odontológica** atual proíbe:
+    a) atendimento em equipes multiprofissionais.  
+    b) atendimento sem registro profissional.  
+    c) apenas atendimento em hospitais.  
+    d) atendimento em unidades básicas.  
+    **Gabarito:** b  
+
+60. O **controle de infecção por vírus** em consultório inclui:
+    a) apenas uso de luvas descartáveis.  
+    b) uso de EPI, desinfecção de superfícies e controle de instrumentos.  
+    c) não usar máscaras.  
+    d) reutilizar luvas entre pacientes.  
+    **Gabarito:** b  
+
+---
+
+## Bloco 4 – Radiologia, anestesia, emergências e odontologia hospitalar (61–70)
+
+61. A **radiografia periapical** é mais indicada para avaliação de:
+    a) anatomia de tecidos moles.  
+    b) lesões periapicais, reabsorções e estrutura óssea.  
+    c) cor da mucosa.  
+    d) controle de halitose.  
+    **Gabarito:** b  
+
+62. A **radiografia oclusal** é útil para avaliar:
+    a) apenas dentes anteriores.  
+    b) fraturas de mandíbula, impactação de dentes, tumores ósseos.  
+    c) somente aparelhos.  
+    d) apenas restaurações estéticas.  
+    **Gabarito:** b  
+
+63. O uso de **chumbo (blindagem)** em radiologia odontológica protege:
+    a) apenas a cabeça do paciente.  
+    b) tecidos sensíveis à radiação (como gônada, medula).  
+    c) o ar circundante.  
+    d) apenas o profissional.  
+    **Gabarito:** b  
+
+64. O **exame de ortopantomografia** é mais indicado em:
+    a) cáries profundas.  
+    b) avaliação de crescimento e proporções craniofaciais e impactações.  
+    c) lesões de cárie incipientes.  
+    d) avaliação de cor.  
+    **Gabarito:** b  
+
+65. O uso de **anestesia local** em pacientes com:
+    a) hipertensão descontrolada.  
+    b) alergia ao componente anestésico.  
+    c) necessidade de controle de dor, com avaliação clínica prévia.  
+    d) doença pulmonar sem supervisão.  
+    **Gabarito:** c  
+
+66. O principal risco de uma **anestesia em mola** (injeção intravascular) é:
+    a) aumento da dor.  
+    b) tosse intensa.  
+    c) reação tóxica sistêmica ao anestésico.  
+    d) descoloração local.  
+    **Gabarito:** c  
+
+67. Em caso de **síncope em consultório**, a primeira conduta é:
+    a) manter o paciente em pé.  
+    b) deitar o paciente com elevação das pernas e boa ventilação.  
+    c) aumentar a luz ambiente.  
+    d) aplicar anestésico adicional.  
+    **Gabarito:** b  
+
+68. O **controle de hemorragia** em ferida pós‑exodontia inclui:
+    a) apenas uso de água gelada.  
+    b) compressão local com gaze, repouso e orientação pós‑operatória.  
+    c) uso de antibiótico antes da extração.  
+    d) recomendação de dieta sólida imediata.  
+    **Gabarito:** b  
+
+69. A **odontologia hospitalar** é indicada quando:
+    a) o paciente apresenta necessidade de procedimentos ambulatoriais simples.  
+    b) o paciente está em condições clínicas que demandam suporte hospitalar e monitorização.  
+    c) o paciente prefere atendimento domiciliar.  
+    d) o paciente não possui plano de saúde.  
+    **Gabarito:** b  
+
+70. Em pacientes internados, a **atuação odontológica** deve priorizar:
+    a) procedimentos estéticos complexos.  
+    b) controle de infecção, dor, higiene e avaliação rápido‑rastreada.  
+    c) extensas restaurações.  
+    d) clareamento dentário.  
+    **Gabarito:** b  
+
+---
+
+## Bloco 5 – Questões discursivas (71–100)
+
+71. Explique, em no máximo 5 linhas, por que a **classificação de cárie de Black** ainda é relevante em odontologia clínica.  
+*Espera‑se abordar: utilidade na padronização de diagnóstico, localização anatômica, planejamento de acesso e escolha de materiais.*
+
+72. Descreva duas indicações e duas contraindicações para o uso de **cimento de ionômero de vidro** em restaurações.  
+*Espera‑se abordar: indicação para áreas de baixa carga e liberação de flúor; contraindicações para superfícies oclusais de alta carga e grande perda estrutural.*
+
+73. Esboce um plano de atendimento para um dente com **cárie extensa próxima à polpa**, sem dor ao frio, mas com sensibilidade mecânica.  
+*Espera‑se descrever remoção de cárie, proteção pulpar (ex.: base de hidróxido de cálcio ou resina sedativa), seleção de material restaurador e indicação de controle radiográfico.*
+
+74. Explique o que é **pulpotomia** e sua principal indicação em dentes decíduos.  
+*Espera‑se definir: remoção parcial da polpa coronária; indicação em dentes decíduos com polpa coronária irreversivelmente inflamada, mas radicular vital.*
+
+75. Descreva, em poucas frases, como o **controle de placa** pode impactar tanto a cárie quanto a doença periodontal.  
+*Espera‑se associar: redução de bactérias cariogênicas e periodontopatogênicas, diminuição de cárie e bolsas periodontais, melhora da hemostasia gengival.*
+
+76. Explique, em 4–6 linhas, a importância de **selantes de fissura** como medida coletiva de prevenção de cárie em escolas.  
+*Espera‑se descrever: proteção de superfícies oclusais, redução de cárie em molares, baixo custo, aplicação em massa, integração com escovação e flúor.*
+
+77. Descreva dois objetivos principais da **aplanagem radicular** no tratamento de periodontite.  
+*Espera‑se citar: remoção de cálculo subgengival, lisimentação de cimento alterado, favorecendo reesplacamento e controle de inflamação.*
+
+78. Escreva, em 4–5 linhas, como a **radioatividade** em odontologia pode ser minimizada durante exames radiográficos.  
+*Espera‑se citar: uso de colimador, técnica correta, chumbo, menor número de exames desnecessários, exposição ajustada ao paciente.*
+
+79. Descreva, em no máximo 5 linhas, o que deve ser feito imediatamente em um caso de **avulsão dentária** em um paciente jovem em ambiente escolar.  
+*Espera‑se abordar: manter o dente úmido (soro, leite, saliva), evitar limpeza com álcool, reimplante o mais rápido e encaminhamento urgente.*
+
+80. Explique, em 4–6 linhas, a importância de **biossegurança** em clínica odontológica para o profissional, o paciente e a equipe.  
+*Espera‑se abordar: prevenção de infecções cruzadas, uso de EPI, esterilização, regulamentação legal e responsabilidade ética.*
+
+81. Descreva, em 4–5 linhas, como o **controle de infecção** deve ser organizado em um consultório de Cirurgião Dentista do SUS.  
+*Espera‑se citar: rotina de limpeza, desinfecção, esterilização, uso de EPI, organização de resíduos, protocolos de emergência e treinamento da equipe.*
+
+82. Explique, em 4–6 linhas, por que **educação em saúde bucal** é tão importante em unidades básicas de saúde.  
+*Espera‑se abordar: empoderamento do paciente, redução de demanda por procedimentos caros, melhora de hábitos, prevenção de cárie e periodontite, engajamento da comunidade.*
+
+83. Descreva, em 4–5 linhas, como a **atenção primária** em saúde bucal pode impactar a saúde geral da população.  
+*Espera‑se relacionar: prevenção de infecções, controle de dor, redução de abscessos, melhora de alimentação e qualidade de vida, menor necessidade de internações.*
+
+84. Explique, em 4–6 linhas, por que o **controle de cárie** deve ser visto como uma combinação de ações clínicas e coletivas.  
+*Espera‑se incluir: restaurações, flúor, selantes, controle de placa, educação, políticas públicas e atuação em escolas/Unidades de Saúde.*
+
+85. Descreva, em 4–5 linhas, como a **ética profissional** deve nortear a atuação de um cirurgião‑dentista em serviço público.  
+*Espera‑se abordar: respeito à dignidade do paciente, atendimento sem discriminação, honestidade, transparência quanto a riscos e benefícios, e uso adequado dos recursos públicos.*
+
+86. Explique, em 4–6 linhas, por que a **documentação clínica completa** é essencial em um serviço de saúde.  
+*Espera‑se mencionar: continuidade do tratamento, segurança jurídica, avaliação de condutas, padronização de práticas, e subsídio para auditorias e melhorias no serviço.*
+
+87. Descreva, em 4–5 linhas, como o **uso racional de anestesia local** contribui tanto para a eficácia do tratamento quanto para a segurança do paciente.  
+*Espera‑se apontar: dosagem adequada, avaliação de comorbidades, uso de aspiração, monitoramento de intercorrências e indicação restrita ao necessário.*
+
+88. Explique, em 4–6 linhas, a relevância do **cuidado pós‑operatório** em procedimentos de exodontia.  
+*Espera‑se incluir: orientações sobre hemostasia, dieta, higiene, evitar esforço físico, sinais de complicação (sangramento persistente, dor intensa, febre) e encaminhamento quando necessário.*
+
+89. Descreva, em 4–5 linhas, como a **atuação em odontologia hospitalar** difere da atuação em consultório convencional.  
+*Espera‑se focar em: atendimento a pacientes com comorbidades, integração com equipe médica, suporte a procedimentos de alto risco, planejamento de procedimentos sob suporte de UTI ou anestesia geral, e protocolos de urgência.*
+
+90. Explique, em 4–6 linhas, por que a **atenção à saúde bucal de pacientes com deficiência** requer abordagem especializada.  
+*Espera‑se citar: adaptação de linguagem, ambiente, instrumentos, manejo de ansiedade, coordenação com cuidadores e, se possível, protocolo de sedação ou anestesia para garantir segurança.*
+
+91. Descreva, em 4–5 linhas, como a **radiologia odontológica** pode auxiliar no diagnóstico de doenças maxilomandibulares.  
+*Espera‑se mencionar: detecção de fraturas, tumores, cistos, reabsorções, doenças periodontais avançadas, impactações de terceiros molares e alterações ósseas associadas a infecções.*
+
+92. Explique, em 4–6 linhas, a importância do **controle de infecção em odontologia hospitalar**.  
+*Espera‑se destacar: prevenção de infecções hospitalares, proteção de pacientes imunossuprimidos, uso de EPI, esterilização adequada, gerenciamento de resíduos e adesão a protocolos institucionais.*
+
+93. Descreva, em 4–5 linhas, como a **atuação em pronto‑atendimento odontológico** deve ser estruturada em um hospital.  
+*Espera‑se abordar: triagem de dor, trauma, infecção, hemorragia; tratamento de urgência (ex.: exodontia, drenagem de abscesso, controle de dor), e encaminhamento quando necessário.*
+
+94. Explique, em 4–6 linhas, por que a **integração entre odontologia e outras áreas da saúde** é fundamental em serviços públicos.  
+*Espera‑se citar: diabetes, hipertensão, cardiopatias, doenças hematológicas, que podem interferir em procedimentos odontológicos, e a necessidade de avaliação e coordenação com clínico geral e cardiologista, por exemplo.*
+
+95. Descreva, em 4–5 linhas, como a **atuação em saúde bucal coletiva** pode impactar a expectativa de vida e a qualidade de vida da população.  
+*Espera‑se relacionar: redução de infecções, dor, dificuldade de mastigação e abscessos; melhora na alimentação, autoestima e saúde geral, com reflexo positivo em doenças sistêmicas.*
+
+96. Explique, em 4–6 linhas, por que a **atualização científica contínua** é essencial para um cirurgião‑dentista em concurso e em atuação clínica.  
+*Espera‑se incluir: conhecimento de novas técnicas, materiais, protocolos de biossegurança, diretrizes de saúde pública, legislação e ética, o que reduz risco de erros e melhora o desempenho em provas objetivas e discursivas.*
+
+97. Descreva, em 4–5 linhas, como um **programa de saúde bucal em escola** pode ser organizado em etapas.  
+*Espera‑se citar: diagnóstico (levantamento de CPO‑D), educação em saúde, escovação supervisionada, flúor tópico, seleção de casos para tratamento precoce e encaminhamento para UBS, além de acompanhamento periódico.*
+
+98. Explique, em 4–6 linhas, por que a **atuação previdente** em odontologia é mais econômica e eficaz do que o tratamento curativo excessivo.  
+*Espera‑se abordar: custo menor de prevenção (flúor, selantes, orientação) em relação a restaurações extensas, endodontias e próteses, além da redução de abscessos, dor e perda de dentes.*
+
+99. Descreva, em 4–5 linhas, como a **ética e a legislação odontológica** devem ser consideradas no elaboração de planejamentos terapêuticos.  
+*Espera‑se citar: priorização do bem‑estar do paciente, evitando intervenções desnecessárias, consentimento informado, transparência quanto a alternativas e custos, e respeito ao Código de Ética e normas oficiais do SUS.*
+
+100. Explique, em 4–6 linhas, como você usaria um **simulado com 100 questões** (objetivas e discursivas) como ferramenta de estudo até a prova de Cirurgião Dentista – Clínico Geral em Senador Canedo.  
+*Espera‑se que o candidato descreva: divisão em blocos de conteúdo, revisão imediata de erros, criação de caderno de dúvidas, simulação de tempo de prova, e revisão de tópicos fracos com material teórico específico após cada bloco.*
+
+---
