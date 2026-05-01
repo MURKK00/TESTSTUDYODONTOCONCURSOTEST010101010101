@@ -3,355 +3,621 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plano de Estudos - Odontologia</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Plano de Estudos — Cirurgião Dentista</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:wght@700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --color-bg: #f0f4f8; --color-surface: #ffffff; --color-text-primary: #1e293b;
-  --color-text-secondary: #64748b; --color-border: #e2e8f0; --color-primary: #3b82f6;
-  --radius-md: 12px; --radius-lg: 16px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1); --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+  --bg: #f4f1ec;
+  --surface: #ffffff;
+  --surface2: #f9f7f4;
+  --text: #1a1714;
+  --text2: #5c5651;
+  --text3: #9b9390;
+  --accent: #2d5a27;
+  --accent-light: #eaf2e8;
+  --accent2: #8b4513;
+  --accent2-light: #fdf0e8;
+  --blue: #1a4a8a;
+  --blue-light: #e8eff9;
+  --amber: #8a5c1a;
+  --amber-light: #fdf5e8;
+  --red: #8a1a1a;
+  --red-light: #fde8e8;
+  --border: #e8e3dc;
+  --radius: 12px;
+  --radius-lg: 18px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Inter', sans-serif; background-color: var(--color-bg); color: var(--color-text-primary); line-height: 1.6; padding: 20px; }
-.container { max-width: 900px; margin: 0 auto; background: var(--color-surface); padding: 30px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
 
-/* Header e Contadores */
-.header { padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); margin-bottom: 1.5rem; }
-.header h1 { font-size: 24px; font-weight: 700; color: #0f172a; margin-bottom: 8px; }
-.header p { font-size: 14px; color: var(--color-text-secondary); }
-.counters { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-bottom: 2rem; }
-.counter { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 16px; text-align: center; box-shadow: var(--shadow-sm); }
-.counter .val { font-size: 32px; font-weight: 700; display: block; line-height: 1.2; margin-bottom: 4px; }
-.counter .lbl { font-size: 12px; color: var(--color-text-secondary); text-transform: uppercase; font-weight: 600; }
-.c-blue .val { color: #3b82f6; } .c-teal .val { color: #10b981; } .c-amber .val { color: #f59e0b; } .c-coral .val { color: #ef4444; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 15px;
+}
 
-/* Navegação */
-.tabs { display: flex; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap; background: #f1f5f9; padding: 6px; border-radius: 14px; }
-.tab { flex: 1; min-width: 110px; padding: 10px; border: none; border-radius: 10px; background: transparent; cursor: pointer; font-size: 14px; font-weight: 600; color: var(--color-text-secondary); transition: all 0.3s ease; }
-.tab.active { background: var(--color-surface); color: var(--color-primary); box-shadow: var(--shadow-sm); }
-.section { display: none; animation: fadeIn 0.4s ease; }
-.section.active { display: block; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+/* ===== LAYOUT ===== */
+.app-wrap { max-width: 860px; margin: 0 auto; padding: 24px 16px 60px; }
 
-/* Cronograma e Checkboxes */
-.week-header { font-size: 15px; font-weight: 600; padding: 16px; background: #f8fafc; border-radius: var(--radius-md); margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; border: 1px solid var(--color-border); transition: background 0.2s;}
-.week-header:hover { background: #f1f5f9; }
-.week-body { display: none; margin-bottom: 20px; padding: 0 10px; }
+/* ===== HEADER ===== */
+.site-header {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  margin-bottom: 20px;
+}
+.header-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.header-title { font-family: 'Fraunces', Georgia, serif; font-size: 26px; line-height: 1.2; margin-bottom: 4px; }
+.header-sub { font-size: 13px; color: var(--text2); }
+.header-sub strong { color: var(--text); }
+.countdown-pill {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.countdown-pill span { font-size: 22px; font-weight: 700; display: block; line-height: 1; }
+
+/* ===== STAT CARDS ===== */
+.stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+}
+.stat-val { font-size: 28px; font-weight: 600; display: block; line-height: 1.1; margin-bottom: 2px; }
+.stat-lbl { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: .6px; }
+.s-green .stat-val { color: var(--accent); }
+.s-blue .stat-val { color: var(--blue); }
+.s-amber .stat-val { color: var(--amber); }
+.s-red .stat-val { color: var(--red); }
+
+/* ===== PROGRESS BAR ===== */
+.progress-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 20px; display: flex; align-items: center; gap: 16px; }
+.progress-label { font-size: 13px; color: var(--text2); white-space: nowrap; }
+.progress-track { flex: 1; height: 8px; background: var(--bg); border-radius: 4px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: 4px; transition: width .4s ease; }
+.progress-pct { font-size: 14px; font-weight: 600; color: var(--accent); min-width: 36px; text-align: right; }
+
+/* ===== NAVIGATION TABS ===== */
+.nav-tabs { display: flex; gap: 6px; margin-bottom: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 6px; }
+.nav-tab {
+  flex: 1; padding: 10px 8px; border: none; border-radius: 8px; background: transparent;
+  cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500;
+  color: var(--text2); transition: all .2s; text-align: center;
+}
+.nav-tab:hover { background: var(--surface2); color: var(--text); }
+.nav-tab.active { background: var(--accent); color: #fff; }
+
+/* ===== SECTIONS ===== */
+.section { display: none; }
+.section.active { display: block; animation: fadeUp .3s ease; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ===== CRONOGRAMA ===== */
+.week-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; }
+.week-header {
+  padding: 14px 20px; display: flex; align-items: center; justify-content: space-between;
+  cursor: pointer; user-select: none; gap: 12px;
+}
+.week-header:hover { background: var(--surface2); }
+.week-title { font-size: 14px; font-weight: 600; }
+.phase-badge {
+  font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 100px;
+}
+.ph-base { background: var(--amber-light); color: var(--amber); }
+.ph-spec { background: var(--accent-light); color: var(--accent); }
+.ph-rev { background: var(--blue-light); color: var(--blue); }
+.ph-int { background: var(--red-light); color: var(--red); }
+.week-arrow { font-size: 11px; color: var(--text3); transition: transform .2s; }
+.week-arrow.open { transform: rotate(90deg); }
+
+.week-body { display: none; border-top: 1px solid var(--border); }
 .week-body.open { display: block; }
-.day-row { display: grid; grid-template-columns: 40px 90px 1fr 1fr 120px; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--color-border); align-items: center; font-size: 14px; transition: opacity 0.3s; }
-.day-row.done { opacity: 0.5; background: #f8fafc; border-radius: 8px; padding-left: 8px; }
-.day-label { color: var(--color-text-primary); font-weight: 600; font-size: 13px; }
-input[type="checkbox"] { width: 20px; height: 20px; cursor: pointer; accent-color: #10b981; }
 
-/* Tags e Botões do Cronograma */
-.tag { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 500; margin-bottom: 4px; }
-.tag-spec { background: #dcfce7; color: #166534; } .tag-pol { background: #dbeafe; color: #1e40af; }
-.btn-questao { background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; padding: 6px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; cursor: pointer; transition: 0.2s; text-align: center; width: 100%; }
-.btn-questao:hover { background: #c7d2fe; transform: scale(1.05); }
+.col-row {
+  display: grid; grid-template-columns: 24px 88px 1fr 1fr 100px;
+  gap: 10px; padding: 6px 20px; align-items: center;
+  font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: .5px;
+  border-bottom: 1px solid var(--border);
+}
+.day-row {
+  display: grid; grid-template-columns: 24px 88px 1fr 1fr 100px;
+  gap: 10px; padding: 12px 20px; align-items: start;
+  border-bottom: 1px solid var(--border); transition: opacity .3s, background .2s;
+}
+.day-row:last-child { border-bottom: none; }
+.day-row:hover { background: var(--surface2); }
+.day-row.done { opacity: .45; }
+input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; accent-color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+.day-label { font-size: 12px; font-weight: 600; color: var(--text); padding-top: 2px; }
+.topic-tag {
+  display: inline-block; font-size: 11.5px; padding: 3px 9px; border-radius: 6px;
+  margin-bottom: 3px; line-height: 1.4;
+}
+.tt-green { background: var(--accent-light); color: var(--accent); }
+.tt-blue { background: var(--blue-light); color: var(--blue); }
+.btn-q {
+  font-family: 'DM Sans', sans-serif; font-size: 11.5px; font-weight: 600;
+  padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface2); color: var(--text2); cursor: pointer;
+  transition: all .15s; width: 100%; text-align: center;
+}
+.btn-q:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.rest-label { font-size: 11px; color: var(--text3); font-style: italic; padding-top: 4px; }
 
-/* Banco de Questões */
-.question-block { background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 16px; }
-.question-text { font-size: 15px; font-weight: 500; margin-bottom: 12px; color: #0f172a; }
-.options-list { list-style: none; margin-bottom: 16px; }
-.options-list li { padding: 10px 14px; background: #ffffff; border: 1px solid var(--color-border); margin-bottom: 8px; border-radius: 8px; font-size: 14px; cursor: pointer; transition: background 0.2s;}
-.options-list li:hover { background: #f1f5f9; }
-.gabarito-box { display: none; padding: 12px; background: #dcfce7; border-left: 4px solid #10b981; border-radius: 4px; margin-top: 12px; font-weight: 600; font-size: 14px; color: #166534; }
-.btn-show-gab { padding: 8px 16px; border-radius: 8px; border: 1px solid #cbd5e1; background: #ffffff; cursor: pointer; font-size: 13px; font-weight: 600; color: #475569; transition: 0.2s;}
-.btn-show-gab:hover { background: #f1f5f9; color: #0f172a; }
+/* ===== BANCO DE QUESTÕES ===== */
+.filter-bar { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }
+.filter-btn {
+  font-family: 'DM Sans', sans-serif; font-size: 12.5px; font-weight: 500;
+  padding: 6px 14px; border-radius: 100px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text2); cursor: pointer; transition: all .15s;
+}
+.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.q-count { font-size: 12px; color: var(--text3); margin-bottom: 16px; }
 
-/* Flashcards e Filtros */
-.filter-container { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
-.btn-filter { padding: 8px 16px; border-radius: 20px; border: 1px solid var(--color-border); background: var(--color-surface); cursor: pointer; font-size: 13px; font-weight: 500; transition: 0.2s;}
-.btn-filter.active { background: #3b82f6; color: white; border-color: #3b82f6; }
-.flashcards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; perspective: 1000px; }
-.flashcard { background: transparent; width: 100%; height: 220px; perspective: 1000px; cursor: pointer; }
-.flashcard-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
-.flashcard.flipped .flashcard-inner { transform: rotateY(180deg); }
-.flashcard-front, .flashcard-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; border-radius: var(--radius-md); border: 2px solid #e2e8f0; }
-.flashcard-front { background-color: #ffffff; color: #1e293b; }
-.flashcard-back { background-color: #1e293b; color: white; transform: rotateY(180deg); border-color: #1e293b; }
-.fc-tag { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: #3b82f6; margin-bottom: 12px; }
-.flashcard-back .fc-tag { color: #94a3b8; }
+.q-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 20px; margin-bottom: 12px;
+}
+.q-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.q-num {
+  font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px;
+  background: var(--surface2); color: var(--text2); border: 1px solid var(--border);
+}
+.q-bloco-tag { font-size: 11px; color: var(--accent); font-weight: 600; }
+.q-text { font-size: 14.5px; font-weight: 500; margin-bottom: 14px; line-height: 1.5; }
 
-/* Responsivo para Tablet/Celular */
-@media (max-width: 768px) {
-  .day-row { grid-template-columns: 30px 1fr; gap: 8px; padding: 16px 8px; align-items: start; }
-  .day-row > div:nth-child(2) { font-weight: 700; color: #0f172a; margin-bottom: 4px; }
-  .day-row > div:nth-child(3), .day-row > div:nth-child(4) { grid-column: 2; }
-  .day-row > div:nth-child(5) { grid-column: 2; margin-top: 8px; }
-  .container { padding: 16px; margin: 0; border-radius: 0; box-shadow: none; }
-  body { padding: 0; background: var(--color-surface); }
+.q-options { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
+.q-opt {
+  padding: 10px 14px; border: 1px solid var(--border); border-radius: 9px;
+  font-size: 13.5px; cursor: pointer; transition: all .15s; line-height: 1.4;
+  background: var(--surface2);
+}
+.q-opt:hover { border-color: var(--accent); background: var(--accent-light); }
+.q-opt.selected { border-color: var(--blue); background: var(--blue-light); }
+.q-opt.correct { border-color: var(--accent) !important; background: var(--accent-light) !important; font-weight: 600; }
+.q-opt.wrong { border-color: var(--red) !important; background: var(--red-light) !important; }
+
+.q-actions { display: flex; gap: 8px; }
+.btn-reveal, .btn-explain {
+  font-family: 'DM Sans', sans-serif; font-size: 12.5px; font-weight: 500;
+  padding: 7px 14px; border-radius: 8px; cursor: pointer; transition: all .15s;
+}
+.btn-reveal { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+.btn-reveal:hover { background: #234820; }
+.btn-explain { background: transparent; color: var(--text2); border: 1px solid var(--border); }
+.btn-explain:hover { background: var(--surface2); color: var(--text); }
+
+.q-answer {
+  margin-top: 12px; padding: 10px 14px; border-radius: 8px;
+  background: var(--accent-light); color: var(--accent); font-size: 13.5px;
+  border-left: 3px solid var(--accent);
+}
+.q-explain {
+  margin-top: 8px; padding: 10px 14px; border-radius: 8px;
+  background: var(--blue-light); color: var(--blue); font-size: 13px; line-height: 1.5;
+  border-left: 3px solid var(--blue);
+}
+.hidden { display: none !important; }
+
+/* ===== FLASHCARDS ===== */
+.fc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; perspective: 1000px; }
+.fc-wrap { height: 200px; cursor: pointer; }
+.fc-inner {
+  width: 100%; height: 100%; position: relative;
+  transform-style: preserve-3d; transition: transform .5s ease;
+  border-radius: var(--radius); border: 1px solid var(--border);
+}
+.fc-wrap.flipped .fc-inner { transform: rotateY(180deg); }
+.fc-front, .fc-back {
+  position: absolute; width: 100%; height: 100%; backface-visibility: hidden;
+  border-radius: var(--radius); padding: 20px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+}
+.fc-front { background: var(--surface); }
+.fc-back { background: var(--text); color: var(--bg); transform: rotateY(180deg); }
+.fc-cat-tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; margin-bottom: 10px; }
+.fc-front .fc-cat-tag { color: var(--accent); }
+.fc-back .fc-cat-tag { color: var(--text3); }
+.fc-q { font-size: 13.5px; font-weight: 500; line-height: 1.5; color: var(--text); }
+.fc-back .fc-q { color: var(--bg); font-size: 12.5px; }
+.fc-hint { font-size: 11px; color: var(--text3); margin-top: 12px; }
+.fc-back .fc-hint { color: #8a8a8a; }
+
+/* ===== ABA ANÁLISE ===== */
+.analysis-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 20px; margin-bottom: 12px;
+}
+.analysis-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 14px; }
+.analysis-card p { font-size: 13.5px; color: var(--text2); margin-bottom: 8px; line-height: 1.6; }
+.bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
+.bar-label { font-size: 13px; min-width: 220px; color: var(--text); }
+.bar-track { flex: 1; height: 8px; background: var(--bg); border-radius: 4px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; }
+.bar-pct { font-size: 11.5px; color: var(--text3); min-width: 50px; text-align: right; font-weight: 600; }
+.chip-wrap { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.chip {
+  font-size: 11.5px; padding: 4px 10px; border-radius: 100px; border: 1px solid var(--border);
+  color: var(--text2); background: var(--surface2);
+}
+.disc-tip { background: var(--accent-light); border: 1px solid var(--accent); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 10px; }
+.disc-tip h4 { font-size: 14px; font-weight: 600; color: var(--accent); margin-bottom: 6px; }
+.disc-tip p, .disc-tip li { font-size: 13px; color: var(--text); line-height: 1.6; }
+.disc-tip ul { margin-left: 18px; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+  .col-row, .day-row { grid-template-columns: 22px 72px 1fr; }
+  .col-row > div:nth-child(4), .col-row > div:nth-child(5),
+  .day-row > div:nth-child(4), .day-row > div:nth-child(5) { display: none; }
+  .nav-tab { font-size: 11px; padding: 9px 4px; }
+  .site-header { padding: 20px; }
+  .header-title { font-size: 20px; }
+  .bar-label { min-width: 140px; font-size: 12px; }
 }
 </style>
 </head>
 <body>
+<div class="app-wrap">
 
-<div class="container">
-  <div class="header">
-    <h1>Plano de Estudos — Odontologia</h1>
-    <p>Prefeitura de Senador Canedo-GO &nbsp;·&nbsp; Prova: <strong>21/06/2026</strong> &nbsp;·&nbsp; Banca: Instituto Verbena/UFG</p>
+  <!-- HEADER -->
+  <div class="site-header">
+    <div class="header-top">
+      <div>
+        <div class="header-title">Plano de Estudos<br>Cirurgião Dentista CG</div>
+        <div class="header-sub">Prefeitura de Senador Canedo-GO &nbsp;·&nbsp; Banca: <strong>Instituto Verbena/UFG</strong></div>
+      </div>
+      <div class="countdown-pill">
+        <span id="dias-restantes">51</span>
+        dias para a prova
+      </div>
+    </div>
   </div>
 
-  <div class="counters">
-    <div class="counter c-blue"><span class="val" id="dias-restantes">52</span><span class="lbl">dias restantes</span></div>
-    <div class="counter c-teal"><span class="val" id="dias-concluidos">0</span><span class="lbl">dias concluídos</span></div>
+  <!-- STAT CARDS -->
+  <div class="stats-row">
+    <div class="stat-card s-blue"><span class="stat-val">21/06</span><span class="stat-lbl">Data da prova</span></div>
+    <div class="stat-card s-green"><span class="stat-val" id="dias-feitos">0</span><span class="stat-lbl">Dias concluídos</span></div>
+    <div class="stat-card s-amber"><span class="stat-val">10</span><span class="stat-lbl">Vagas imediatas</span></div>
+    <div class="stat-card s-red"><span class="stat-val">60%</span><span class="stat-lbl">Peso Conhec. Espec.</span></div>
   </div>
 
-  <div class="tabs">
-    <button class="tab active" onclick="showTab('cronograma')" id="tab-cronograma">📅 Cronograma</button>
-    <button class="tab" onclick="showTab('questoes')" id="tab-questoes">📝 Banco de Questões</button>
-    <button class="tab" onclick="showTab('flashcards')" id="tab-flashcards">🧠 Flashcards</button>
+  <!-- PROGRESS -->
+  <div class="progress-section">
+    <span class="progress-label">Progresso geral</span>
+    <div class="progress-track"><div class="progress-fill" id="prog-fill" style="width:0%"></div></div>
+    <span class="progress-pct" id="prog-pct">0%</span>
   </div>
 
-  <!-- ABA: CRONOGRAMA -->
+  <!-- TABS -->
+  <div class="nav-tabs">
+    <button class="nav-tab active" id="tab-cronograma" onclick="showTab('cronograma')">📅 Cronograma</button>
+    <button class="nav-tab" id="tab-questoes" onclick="showTab('questoes')">📝 Questões</button>
+    <button class="nav-tab" id="tab-flashcards" onclick="showTab('flashcards')">🧠 Flashcards</button>
+    <button class="nav-tab" id="tab-analise" onclick="showTab('analise')">📊 Análise da Banca</button>
+  </div>
+
+  <!-- ===== CRONOGRAMA ===== -->
   <div id="cronograma" class="section active">
-    <p style="font-size:14px;color:var(--color-text-secondary);margin-bottom:16px">Marque a caixa ao concluir o dia. Toque no botão para ir direto às questões.</p>
-    <div id="weeks"></div>
+    <div id="weeks-container"></div>
   </div>
 
-  <!-- ABA: BANCO DE QUESTÕES -->
+  <!-- ===== QUESTÕES ===== -->
   <div id="questoes" class="section">
-    <p style="font-size:14px;color:var(--color-text-secondary);margin-bottom:16px">Questões focadas no perfil da banca Instituto Verbena.</p>
-    <div id="qbank-container">
-      <!-- Questões injetadas via JavaScript -->
-    </div>
+    <div id="qbank-container"></div>
   </div>
 
-  <!-- ABA: FLASHCARDS -->
+  <!-- ===== FLASHCARDS ===== -->
   <div id="flashcards" class="section">
-    <div class="filter-container">
-      <button class="btn-filter active" onclick="filterCards('todos', this)">Todos</button>
-      <button class="btn-filter" onclick="filterCards('clinica', this)">Clínica Básica</button>
-      <button class="btn-filter" onclick="filterCards('sus', this)">Saúde Coletiva/SUS</button>
-      <button class="btn-filter" onclick="filterCards('etica', this)">Biossegurança/Ética</button>
-      <button class="btn-filter" onclick="filterCards('radio', this)">Radiologia/Emergências</button>
+    <div class="filter-bar" id="fc-filters">
+      <button class="filter-btn active" onclick="filterCards('todos',this)">Todos (24)</button>
+      <button class="filter-btn" onclick="filterCards('clinica',this)">Clínica / Dentística</button>
+      <button class="filter-btn" onclick="filterCards('sus',this)">SUS / Saúde Pública</button>
+      <button class="filter-btn" onclick="filterCards('etica',this)">Ética / Biossegurança</button>
+      <button class="filter-btn" onclick="filterCards('radio',this)">Radiologia / Urgências</button>
     </div>
-    <div class="flashcards-grid" id="fc-container">
-      <!-- Flashcards injetados via JavaScript -->
-    </div>
+    <div class="fc-grid" id="fc-container"></div>
   </div>
 
+  <!-- ===== ANÁLISE DA BANCA ===== -->
+  <div id="analise" class="section">
+
+    <div class="analysis-card">
+      <h3>Perfil da banca — Instituto Verbena/UFG</h3>
+      <p>Banca universitária ligada à UFG. Questões com embasamento acadêmico e científico — menos "pegadinhas" do que bancas comerciais.</p>
+      <p>Forte cobrança de legislação do SUS (leis literais) e políticas do Ministério da Saúde. Questões de Conhecimentos Específicos baseadas em diretrizes nacionais (ABO, CFO, MS) — não em literatura internacional.</p>
+      <p>A prova discursiva valoriza o critério de conhecimento técnico (70 pts). Textos que citam protocolos e diretrizes nacionais e são bem estruturados tendem a ter notas maiores.</p>
+    </div>
+
+    <div class="analysis-card">
+      <h3>Probabilidade de cobrança — Conhecimentos Específicos (20 questões)</h3>
+      <div class="bar-row"><span class="bar-label">Saúde coletiva / SUS / Indicadores</span><div class="bar-track"><div class="bar-fill" style="width:92%;background:var(--accent)"></div></div><span class="bar-pct">Muito alta</span></div>
+      <div class="bar-row"><span class="bar-label">Dentística e materiais restauradores</span><div class="bar-track"><div class="bar-fill" style="width:82%;background:var(--accent)"></div></div><span class="bar-pct">Alta</span></div>
+      <div class="bar-row"><span class="bar-label">Periodontia — diagnóstico e tratamento</span><div class="bar-track"><div class="bar-fill" style="width:78%;background:var(--accent)"></div></div><span class="bar-pct">Alta</span></div>
+      <div class="bar-row"><span class="bar-label">Endodontia — diagnóstico e tratamento</span><div class="bar-track"><div class="bar-fill" style="width:72%;background:var(--blue)"></div></div><span class="bar-pct">Alta</span></div>
+      <div class="bar-row"><span class="bar-label">Cirurgia oral menor / Exodontia</span><div class="bar-track"><div class="bar-fill" style="width:64%;background:var(--blue)"></div></div><span class="bar-pct">Média-alta</span></div>
+      <div class="bar-row"><span class="bar-label">Urgências odontológicas</span><div class="bar-track"><div class="bar-fill" style="width:60%;background:var(--blue)"></div></div><span class="bar-pct">Média</span></div>
+      <div class="bar-row"><span class="bar-label">Radiologia odontológica</span><div class="bar-track"><div class="bar-fill" style="width:55%;background:var(--amber)"></div></div><span class="bar-pct">Média</span></div>
+      <div class="bar-row"><span class="bar-label">Odontopediatria</span><div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--amber)"></div></div><span class="bar-pct">Média</span></div>
+      <div class="bar-row"><span class="bar-label">Materiais dentários (propriedades)</span><div class="bar-track"><div class="bar-fill" style="width:45%;background:var(--amber)"></div></div><span class="bar-pct">Média-baixa</span></div>
+      <div class="bar-row"><span class="bar-label">Prótese / reabilitação básica</span><div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--red)"></div></div><span class="bar-pct">Baixa</span></div>
+    </div>
+
+    <div class="analysis-card">
+      <h3>Políticas e Legislação de Saúde — tópicos quase certos (10 questões, peso 2)</h3>
+      <div class="chip-wrap">
+        <span class="chip">Lei 8.080/1990 (SUS)</span>
+        <span class="chip">Lei 8.142/1990 (Controle social)</span>
+        <span class="chip">Brasil Sorridente / PNSB</span>
+        <span class="chip">PNAB — Portaria 2.436/2017</span>
+        <span class="chip">ESB na Estratégia Saúde da Família</span>
+        <span class="chip">CEO — tipos e especialidades</span>
+        <span class="chip">Código de Ética Odontológica (CFO)</span>
+        <span class="chip">Vigilância em Saúde Bucal</span>
+        <span class="chip">SB Brasil 2010 — indicadores</span>
+        <span class="chip">Fluoretação das águas</span>
+        <span class="chip">Índice CPO-D / ceo-d / SiC</span>
+        <span class="chip">CONASP / Pacto pela Saúde</span>
+      </div>
+    </div>
+
+    <div class="analysis-card">
+      <h3>Prova Discursiva — o que saber</h3>
+      <p style="font-size:13px;margin-bottom:14px">Vale 100 pts. Nota mínima: 50 pts. Máximo 30 linhas. Corrigida dos 60 melhores na objetiva.</p>
+      <div class="disc-tip">
+        <h4>Distribuição dos pontos</h4>
+        <ul>
+          <li><strong>70 pts — Conhecimento técnico:</strong> precisão clínica, base em diretrizes nacionais, argumentação estruturada</li>
+          <li><strong>15 pts — Coerência e coesão textual:</strong> texto estruturado, parágrafos com unidade temática</li>
+          <li><strong>15 pts — Língua Portuguesa:</strong> ortografia, pontuação, registro formal</li>
+        </ul>
+      </div>
+      <div class="disc-tip" style="background:var(--blue-light);border-color:var(--blue)">
+        <h4 style="color:var(--blue)">Temas mais prováveis</h4>
+        <div class="chip-wrap">
+          <span class="chip">Cárie e odontologia mínima invasiva</span>
+          <span class="chip">Atenção Básica em Saúde Bucal / ESB</span>
+          <span class="chip">Doença periodontal: diagnóstico e tratamento</span>
+          <span class="chip">Brasil Sorridente e indicadores de saúde bucal</span>
+          <span class="chip">Urgências odontológicas na atenção básica</span>
+          <span class="chip">Biossegurança em odontologia</span>
+          <span class="chip">Tratamento endodôntico: indicações e protocolo</span>
+        </div>
+      </div>
+      <div class="disc-tip" style="background:var(--amber-light);border-color:var(--amber)">
+        <h4 style="color:var(--amber)">Estrutura recomendada (30 linhas)</h4>
+        <ul>
+          <li><strong>Introdução (3-4 linhas):</strong> contextualizar o tema na saúde pública bucal</li>
+          <li><strong>Desenvolvimento (18-22 linhas):</strong> epidemiologia, diagnóstico, protocolo de tratamento, diretrizes do MS</li>
+          <li><strong>Conclusão (3-4 linhas):</strong> impacto na atenção básica / saúde coletiva</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<!-- CONEXÃO COM O ARQUIVO EXTERNO (dados.js) -->
+<!-- SCRIPT DADOS -->
 <script src="dados.js"></script>
 
 <script>
-// --- CONTAGEM DE DIAS ---
-const today = new Date(2026,3,30);
-const prova = new Date(2026,5,21);
-const diff = Math.round((prova-today)/(1000*60*60*24));
-document.getElementById('dias-restantes').textContent = diff > 0 ? diff : 0;
-
-// --- NAVEGAÇÃO DE ABAS ---
-function showTab(id) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  document.getElementById('tab-' + id).classList.add('active');
-}
-
-function abrirQuestoes() {
-  showTab('questoes');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// --- DADOS DO CRONOGRAMA COMPLETO (Semanas 1 a 7) ---
+// ===== DADOS DO CRONOGRAMA =====
 const weeks = [
-  {
-    label:"Semana 1 — 1 a 7 de maio",
+  { label:"Semana 1 — 1 a 7 de maio", phase:"base", phaseLabel:"Base teórica",
     days:[
-      {id:"d1", d:"Sex 01/05", t1:"Português: Interpretação", t2:"CF art.37–41", q:"10 Questões ➔"},
-      {id:"d2", d:"Sáb 02/05", t1:"Português: Morfologia", t2:"Lei 8.112", q:"10 Questões ➔"},
-      {id:"d3", d:"Dom 03/05", t1:"Revisão semanal", t2:"Simulado parcial", q:"20 Questões ➔"},
-      {id:"d4", d:"Seg 04/05", t1:"Português: Sintaxe", t2:"Lei 8.112 (direitos)", q:"10 Questões ➔"},
-      {id:"d5", d:"Ter 05/05", t1:"Português: Concordância", t2:"Lei 8.112 (processo)", q:"10 Questões ➔"},
-      {id:"d6", d:"Qua 06/05", t1:"Português: Semântica", t2:"Decreto-Lei 200/67", q:"15 Questões ➔"},
-      {id:"d7", d:"Qui 07/05", t1:"Revisão LP completa", t2:"Legislação municipal", q:"20 Questões ➔"}
+      {id:"d1", d:"Sex 01/05", t1:"LP: Interpretação de texto", t2:"Legis: CF art.37–41 (princípios)"},
+      {id:"d2", d:"Sáb 02/05", t1:"LP: Morfologia e classes de palavras", t2:"Legis: Lei 8.112 — cap.I a III"},
+      {id:"d3", d:"Dom 03/05", t1:"Revisão semanal LP + Legis.", t2:"Simulado parcial (20 questões)"},
+      {id:"d4", d:"Seg 04/05", t1:"LP: Sintaxe — sujeito e predicado", t2:"Legis: Lei 8.112 — direitos e deveres"},
+      {id:"d5", d:"Ter 05/05", t1:"LP: Concordância verbal e nominal", t2:"Legis: Lei 8.112 — processo administrativo"},
+      {id:"d6", d:"Qua 06/05", t1:"LP: Semântica, coesão e coerência", t2:"Legis: Decreto-Lei 200/1967"},
+      {id:"d7", d:"Qui 07/05", t1:"Revisão LP completa", t2:"Fichamento de legislação municipal"},
     ]
   },
-  {
-    label:"Semana 2 — 8 a 14 de maio",
+  { label:"Semana 2 — 8 a 14 de maio", phase:"base", phaseLabel:"Base teórica",
     days:[
-      {id:"d8", d:"Sex 08/05", t1:"SUS: Lei 8.080/1990", t2:"SUS: Lei 8.142/1990", q:"15 Questões ➔"},
-      {id:"d9", d:"Sáb 09/05", t1:"Brasil Sorridente / PNSB", t2:"Portaria 2.436 (PNAB)", q:"15 Questões ➔"},
-      {id:"d10", d:"Dom 10/05", t1:"Simulado SUS + PNSB", t2:"Revisão dos erros", q:"30 Questões ➔"},
-      {id:"d11", d:"Seg 11/05", t1:"Código de Ética (CFO)", t2:"Índices Epidemiológicos", q:"15 Questões ➔"},
-      {id:"d12", d:"Ter 12/05", t1:"Vigilância em saúde bucal", t2:"Estatuto do Idoso + ECA", q:"10 Questões ➔"},
-      {id:"d13", d:"Qua 13/05", t1:"Urgência e emergência SUS", t2:"Biossegurança", q:"15 Questões ➔"},
-      {id:"d14", d:"Qui 14/05", t1:"Revisão Políticas Saúde", t2:"Questões saúde pública", q:"20 Questões ➔"}
+      {id:"d8", d:"Sex 08/05", t1:"SUS: Lei 8.080/1990 — princípios e competências", t2:"SUS: Lei 8.142/1990 — controle social"},
+      {id:"d9", d:"Sáb 09/05", t1:"Brasil Sorridente (PNSB): diretrizes e CEO", t2:"Portaria 2.436/2017 — PNAB e ESB"},
+      {id:"d10", d:"Dom 10/05", t1:"Simulado SUS + PNSB (30 questões)", t2:"Revisão imediata dos erros"},
+      {id:"d11", d:"Seg 11/05", t1:"Código de Ética Odontológica (CFO)", t2:"Epidemiologia: índices CPO-D, ceo-d, SiC"},
+      {id:"d12", d:"Ter 12/05", t1:"Vigilância em saúde bucal — SB Brasil 2010", t2:"Estatuto do Idoso + ECA na odontologia"},
+      {id:"d13", d:"Qua 13/05", t1:"Urgência e emergência no SUS — atenção básica", t2:"Controle de infecção / biossegurança"},
+      {id:"d14", d:"Qui 14/05", t1:"Revisão completa Políticas e Legislação Saúde", t2:"Questões saúde pública — concursos GO"},
     ]
   },
-  {
-    label:"Semana 3 — 15 a 21 de maio",
+  { label:"Semana 3 — 15 a 21 de maio", phase:"spec", phaseLabel:"Conhecimentos específicos",
     days:[
-      {id:"d15", d:"Sex 15/05", t1:"Cárie dental e ICDAS", t2:"Classificação de Black", q:"15 Questões ➔"},
-      {id:"d16", d:"Sáb 16/05", t1:"Resina composta", t2:"Ionômero de vidro", q:"15 Questões ➔"},
-      {id:"d17", d:"Dom 17/05", t1:"Simulado Dentística", t2:"Amálgama e cimentação", q:"20 Questões ➔"},
-      {id:"d18", d:"Seg 18/05", t1:"Endo: Anatomia e Diagnóstico", t2:"Indicações tratamento", q:"15 Questões ➔"},
-      {id:"d19", d:"Ter 19/05", t1:"Endo: Acesso e instrumentação", t2:"Obturação e cimentos", q:"15 Questões ➔"},
-      {id:"d20", d:"Qua 20/05", t1:"Endo: Retratamento", t2:"Odontologia Mínima Inv.", q:"15 Questões ➔"},
-      {id:"d21", d:"Qui 21/05", t1:"Revisão Dentística + Endo", t2:"Treino de Discursiva", q:"20 Questões ➔"}
+      {id:"d15", d:"Sex 15/05", t1:"Cárie dental: etiologia, ICDAS, Classe Black", t2:"Diagnóstico: lesão ativa vs inativa"},
+      {id:"d16", d:"Sáb 16/05", t1:"Resina composta: adesivos e técnica incremental", t2:"Ionômero de vidro — indicações e ART"},
+      {id:"d17", d:"Dom 17/05", t1:"Simulado Dentística (20 questões)", t2:"Amálgama e materiais de forramento"},
+      {id:"d18", d:"Seg 18/05", t1:"Endodontia: anatomia pulpar e diagnóstico", t2:"Indicações do tratamento endodôntico"},
+      {id:"d19", d:"Ter 19/05", t1:"Endodontia: acesso, instrumentação e irrigação", t2:"Obturação: guta-percha e cimentos"},
+      {id:"d20", d:"Qua 20/05", t1:"Endodontia: retratamento e lesão endo-perio", t2:"Odontologia mínima invasiva (OMI)"},
+      {id:"d21", d:"Qui 21/05", t1:"Revisão Dentística + Endodontia", t2:"Treino de discursiva: cárie e dentística"},
     ]
   },
-  {
-    label:"Semana 4 — 22 a 28 de maio",
+  { label:"Semana 4 — 22 a 28 de maio", phase:"spec", phaseLabel:"Conhecimentos específicos",
     days:[
-      {id:"d22", d:"Sex 22/05", t1:"Perio: Classificação 2017", t2:"Gengivite e Trat.", q:"15 Questões ➔"},
-      {id:"d23", d:"Sáb 23/05", t1:"Perio: Periodontite", t2:"Raspagem e alisamento", q:"15 Questões ➔"},
-      {id:"d24", d:"Dom 24/05", t1:"Simulado Perio + Endo", t2:"Cirurgia periodontal", q:"25 Questões ➔"},
-      {id:"d25", d:"Seg 25/05", t1:"Cirurgia: Exodontias", t2:"Alveolite e hemorragia", q:"15 Questões ➔"},
-      {id:"d26", d:"Ter 26/05", t1:"Cirurgia: Biópsias/Exostoses", t2:"Anestesia local", q:"15 Questões ➔"},
-      {id:"d27", d:"Qua 27/05", t1:"Urgências: Traumatismo", t2:"Prescrição medicamentosa", q:"15 Questões ➔"},
-      {id:"d28", d:"Qui 28/05", t1:"Revisão cirurgia + urgências", t2:"Prática Discursiva Perio", q:"20 Questões ➔"}
+      {id:"d22", d:"Sex 22/05", t1:"Periodontia: classificação AAP 2017 e gengivite", t2:"Diagnóstico: PS, NIC, sangramento"},
+      {id:"d23", d:"Sáb 23/05", t1:"Periodontia: periodontite — estágios e graus", t2:"RAR: raspagem e alisamento radicular"},
+      {id:"d24", d:"Dom 24/05", t1:"Simulado Periodontia + Endodontia (25 q)", t2:"Cirurgia periodontal básica"},
+      {id:"d25", d:"Seg 25/05", t1:"Cirurgia oral: exodontia — técnicas e complicações", t2:"Alveolite seca: diagnóstico e tratamento"},
+      {id:"d26", d:"Ter 26/05", t1:"Cirurgia: biópsias, frenectomia e exostoses", t2:"Anestesia local — técnicas e farmacologia"},
+      {id:"d27", d:"Qua 27/05", t1:"Urgências: traumatismo dental e avulsão", t2:"Prescrição: antibióticos e AINES"},
+      {id:"d28", d:"Qui 28/05", t1:"Revisão Cirurgia + Urgências", t2:"Prática discursiva: tema periodontal"},
     ]
   },
-  {
-    label:"Semana 5 — 29 de maio a 4 de junho",
+  { label:"Semana 5 — 29 mai a 4 jun", phase:"spec", phaseLabel:"Conhecimentos específicos",
     days:[
-      {id:"d29", d:"Sex 29/05", t1:"Radiologia: Periapicais", t2:"Panorâmica", q:"15 Questões ➔"},
-      {id:"d30", d:"Sáb 30/05", t1:"Interpretação radiográfica", t2:"Proteção radiológica", q:"10 Questões ➔"},
-      {id:"d31", d:"Dom 31/05", t1:"Odontopediatria: Cárie Inf.", t2:"Pulpotomia", q:"15 Questões ➔"},
-      {id:"d32", d:"Seg 01/06", t1:"Materiais dentários (Propriedades)", t2:"Cimentos e Ligas", q:"15 Questões ➔"},
-      {id:"d33", d:"Ter 02/06", t1:"Anatomia dental", t2:"Oclusão e ATM", q:"10 Questões ➔"},
-      {id:"d34", d:"Qua 03/06", t1:"Prótese básica e provisórios", t2:"Ergonomia", q:"10 Questões ➔"},
-      {id:"d35", d:"Qui 04/06", t1:"Simulado Específicos", t2:"Revisão geral específicos", q:"20 Questões ➔"}
+      {id:"d29", d:"Sex 29/05", t1:"Radiologia: técnicas periapicais (paralela e bissetriz)", t2:"Panorâmica: interpretação e artefatos"},
+      {id:"d30", d:"Sáb 30/05", t1:"Radiologia: diagnóstico de cárie, perio e endo", t2:"Proteção radiológica — portarias CNEN"},
+      {id:"d31", d:"Dom 31/05", t1:"Odontopediatria: cárie precoce e cronologia dental", t2:"Pulpotomia e pulpectomia em decíduos"},
+      {id:"d32", d:"Seg 01/06", t1:"Materiais: cimentos, resinas e ligas (propriedades)", t2:"Materiais: cerâmicas e polímeros"},
+      {id:"d33", d:"Ter 02/06", t1:"Anatomia dental e morfologia dos grupos", t2:"Oclusão: guia anterior, ATM básico"},
+      {id:"d34", d:"Qua 03/06", t1:"Prótese básica: provisórios e prótese total", t2:"Ergonomia e biossegurança"},
+      {id:"d35", d:"Qui 04/06", t1:"Simulado específicos completo (20 questões)", t2:"Revisão geral com mapa mental"},
     ]
   },
-  {
-    label:"Semana 6 — 5 a 11 de junho (Revisões)",
+  { label:"Semana 6 — 5 a 11 de junho (Revisões)", phase:"rev", phaseLabel:"Revisão + Simulados",
     days:[
-      {id:"d36", d:"Sex 05/06", t1:"Revisão Língua Portuguesa", t2:"Revisão Legislação", q:"25 Questões ➔"},
-      {id:"d37", d:"Sáb 06/06", t1:"Revisão Políticas SUS/PNSB", t2:"Revisão Código de Ética", q:"25 Questões ➔"},
-      {id:"d38", d:"Dom 07/06", t1:"SIMULADO COMPLETO 1", t2:"Revisão de erros", q:"50 Questões ➔"},
-      {id:"d39", d:"Seg 08/06", t1:"Revisão Dentística + Endo", t2:"Revisão Periodontia", q:"25 Questões ➔"},
-      {id:"d40", d:"Ter 09/06", t1:"Revisão Cirurgia + Urgências", t2:"Revisão Radio + Materiais", q:"25 Questões ➔"},
-      {id:"d41", d:"Qua 10/06", t1:"Prática discursiva (20 min)", t2:"Revisão de pontos fracos", q:"20 Questões ➔"},
-      {id:"d42", d:"Qui 11/06", t1:"Revisão flashcards", t2:"Provas anteriores UFG", q:"30 Questões ➔"}
+      {id:"d36", d:"Sex 05/06", t1:"Revisão LP — pontos críticos e erros comuns", t2:"Revisão Legislação Setor Público"},
+      {id:"d37", d:"Sáb 06/06", t1:"Revisão Políticas Saúde — SUS + PNSB", t2:"Revisão Código de Ética CFO"},
+      {id:"d38", d:"Dom 07/06", t1:"SIMULADO COMPLETO 1 — 50 questões (4h30)", t2:"Revisão imediata dos erros"},
+      {id:"d39", d:"Seg 08/06", t1:"Revisão Dentística + Endodontia (questões erradas)", t2:"Revisão Periodontia"},
+      {id:"d40", d:"Ter 09/06", t1:"Revisão Cirurgia + Urgências + Odontopediatria", t2:"Revisão Radiologia + Materiais"},
+      {id:"d41", d:"Qua 10/06", t1:"2 textos discursivos cronometrados (20 min cada)", t2:"Revisão pontos fracos do simulado 1"},
+      {id:"d42", d:"Qui 11/06", t1:"Revisão geral — flashcards e fichas resumo", t2:"Questões de concursos anteriores (UFG/GO)"},
     ]
   },
-  {
-    label:"Semana 7 — 12 a 20 de junho (Intensivo)",
+  { label:"Semana 7 — 12 a 20 de junho (Intensivo)", phase:"int", phaseLabel:"Intensivo final",
     days:[
-      {id:"d43", d:"Sex 12/06", t1:"SIMULADO COMPLETO 2", t2:"Revisão erros prioritários", q:"50 Questões ➔"},
-      {id:"d44", d:"Sáb 13/06", t1:"Revisão Legislação", t2:"Revisão Saúde Coletiva", q:"30 Questões ➔"},
-      {id:"d45", d:"Dom 14/06", t1:"Revisão Específicos Principais", t2:"Revisão Perio + Cirurgia", q:"30 Questões ➔"},
-      {id:"d46", d:"Seg 15/06", t1:"SIMULADO COMPLETO 3", t2:"Treinamento discursiva final", q:"50 Questões ➔"},
-      {id:"d47", d:"Ter 16/06", t1:"Revisão final de erros", t2:"Discursiva cronometrada", q:"25 Questões ➔"},
-      {id:"d48", d:"Qua 17/06", t1:"Revisão leve: LP + Leis", t2:"Políticas + Críticos", q:"20 Questões ➔"},
-      {id:"d49", d:"Qui 18/06", t1:"Revisão ficha-resumo de leis", t2:"Leitura de mapas mentais", q:"15 Questões ➔"},
-      {id:"d50", d:"Sex 19/06", t1:"Revisão levíssima", t2:"Preparar documentação", q:"10 Questões ➔"},
-      {id:"d51", d:"Sáb 20/06", t1:"Descanso absoluto", t2:"Preparar material prova", q:"Zero"}
+      {id:"d43", d:"Sex 12/06", t1:"SIMULADO COMPLETO 2 — 50 questões cronometrado", t2:"Revisão imediata — erros prioritários"},
+      {id:"d44", d:"Sáb 13/06", t1:"Revisão legislação — todos os blocos", t2:"Revisão saúde coletiva + indicadores"},
+      {id:"d45", d:"Dom 14/06", t1:"Revisão Específicos — dentística + endo", t2:"Revisão Periodontia + Cirurgia oral"},
+      {id:"d46", d:"Seg 15/06", t1:"SIMULADO COMPLETO 3 — 50 questões cronometrado", t2:"Discursiva final cronometrada (20 min)"},
+      {id:"d47", d:"Ter 16/06", t1:"Revisão final de anotações de erros", t2:"1 discursiva completa + correção"},
+      {id:"d48", d:"Qua 17/06", t1:"Revisão leve: LP + Legislação", t2:"Revisão leve: Políticas + Específicos críticos"},
+      {id:"d49", d:"Qui 18/06", t1:"Revisão ficha-resumo de legislação", t2:"Leitura de mapas mentais já feitos"},
+      {id:"d50", d:"Sex 19/06", t1:"Revisão levíssima — somente pontos críticos", t2:"Preparar documentação para a prova"},
+      {id:"d51", d:"Sáb 20/06", t1:"Descanso — ler apenas fichas resumo", t2:"Organizar material para amanhã", rest:true},
     ]
   }
 ];
 
-const containerDiv = document.getElementById('weeks');
-let completedDays = 0;
+const TOTAL_DAYS = weeks.reduce((a, w) => a + w.days.length, 0);
 
+// ===== CONTAGEM REGRESSIVA =====
+const prova = new Date(2026,5,21);
+const hoje = new Date();
+const diff = Math.max(0, Math.round((prova - hoje) / (1000*60*60*24)));
+document.getElementById('dias-restantes').textContent = diff;
+
+// ===== TABS =====
+function showTab(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.getElementById('tab-' + id).classList.add('active');
+  if (id === 'questoes' && document.getElementById('qbank-container').innerHTML === '') renderQuestoes('todas');
+  if (id === 'flashcards') renderFlashcards('todos');
+}
+
+// ===== CRONOGRAMA =====
 function renderSchedule() {
-  containerDiv.innerHTML = '';
-  completedDays = 0;
-  
+  const container = document.getElementById('weeks-container');
+  container.innerHTML = '';
+  let done = 0;
+
   weeks.forEach((w, wi) => {
-    const wdiv = document.createElement('div');
-    // Apenas a primeira semana e a atual devem começar abertas. Por padrão, deixamos a semana 1 aberta.
-    const isOpen = wi === 0 ? 'open' : '';
-    
-    wdiv.innerHTML = `
-      <div class="week-header" onclick="document.getElementById('wb-${wi}').classList.toggle('open')">
-        <span>${w.label}</span><span style="font-size:12px; color:#3b82f6;">Ver dias ▼</span>
+    const isOpen = wi === 0;
+    const div = document.createElement('div');
+    div.className = 'week-block';
+
+    let daysHtml = `<div class="col-row">
+      <div></div><div>Dia</div><div>Tópico principal</div>
+      <div>Tópico complementar</div><div>Questões</div>
+    </div>`;
+
+    w.days.forEach(d => {
+      const checked = localStorage.getItem('sc_' + d.id) === '1';
+      if (checked) done++;
+      const btnHtml = d.rest
+        ? `<span class="rest-label">Descanso</span>`
+        : `<button class="btn-q" onclick="abrirQuestoes('todas')">Resolver questões →</button>`;
+      daysHtml += `
+        <div class="day-row ${checked ? 'done' : ''}" id="row-${d.id}">
+          <div><input type="checkbox" id="${d.id}" ${checked ? 'checked' : ''} onchange="toggleDay('${d.id}')"></div>
+          <div class="day-label">${d.d}</div>
+          <div><span class="topic-tag tt-green">${d.t1}</span></div>
+          <div><span class="topic-tag tt-blue">${d.t2}</span></div>
+          <div>${btnHtml}</div>
+        </div>`;
+    });
+
+    div.innerHTML = `
+      <div class="week-header" onclick="toggleWeek(${wi})">
+        <span class="week-title">${w.label}</span>
+        <div style="display:flex;align-items:center;gap:10px">
+          <span class="phase-badge ph-${w.phase}">${w.phaseLabel}</span>
+          <span class="week-arrow ${isOpen ? 'open' : ''}" id="arrow-${wi}">▶</span>
+        </div>
       </div>
-      <div class="week-body ${isOpen}" id="wb-${wi}">
-        ${w.days.map(d => {
-          const isChecked = localStorage.getItem('study_sc_' + d.id) === 'true';
-          if(isChecked) completedDays++;
-          return `
-          <div class="day-row ${isChecked ? 'done' : ''}" id="row-${d.id}">
-            <div><input type="checkbox" id="${d.id}" onchange="toggleDay('${d.id}')" ${isChecked ? 'checked' : ''}></div>
-            <div class="day-label">${d.d}</div>
-            <div><span class="tag tag-spec">${d.t1}</span></div>
-            <div><span class="tag tag-pol">${d.t2}</span></div>
-            <div>${d.q !== "Zero" ? `<button class="btn-questao" onclick="abrirQuestoes()">${d.q}</button>` : `<span style="font-size:12px;color:#94a3b8;font-style:italic;">Descanso</span>`}</div>
-          </div>
-        `}).join('')}
-      </div>`;
-    containerDiv.appendChild(wdiv);
+      <div class="week-body ${isOpen ? 'open' : ''}" id="wb-${wi}">${daysHtml}</div>`;
+    container.appendChild(div);
   });
-  document.getElementById('dias-concluidos').textContent = completedDays;
+
+  document.getElementById('dias-feitos').textContent = done;
+  const pct = Math.round((done / TOTAL_DAYS) * 100);
+  document.getElementById('prog-fill').style.width = pct + '%';
+  document.getElementById('prog-pct').textContent = pct + '%';
+}
+
+function toggleWeek(i) {
+  const body = document.getElementById('wb-' + i);
+  const arrow = document.getElementById('arrow-' + i);
+  body.classList.toggle('open');
+  arrow.classList.toggle('open');
 }
 
 function toggleDay(id) {
-  const checkbox = document.getElementById(id);
-  localStorage.setItem('study_sc_' + id, checkbox.checked);
+  const cb = document.getElementById(id);
+  localStorage.setItem('sc_' + id, cb.checked ? '1' : '0');
   renderSchedule();
 }
 
-// --- RENDERIZAR QUESTÕES (Requer dados.js) ---
-function renderQuestoes() {
-  const qbContainer = document.getElementById('qbank-container');
-  
-  if (typeof questoesData === 'undefined') {
-    qbContainer.innerHTML = '<p style="color:#ef4444; font-weight:600;">Arquivo dados.js não encontrado ou vazio. Certifique-se de que ele está na mesma pasta.</p>';
-    return;
-  }
-
-  questoesData.forEach((q, index) => {
-    let opcoesHtml = q.opcoes.map(opt => `<li>${opt}</li>`).join('');
-    qbContainer.innerHTML += `
-      <div class="question-block">
-        <div class="question-text">Questão ${q.num}: ${q.pergunta}</div>
-        <ul class="options-list">${opcoesHtml}</ul>
-        <button class="btn-show-gab" onclick="document.getElementById('gab-${index}').style.display = 'block'">Ver Resposta</button>
-        <div class="gabarito-box" id="gab-${index}">Resposta correta: Letra ${q.gabarito.toUpperCase()}</div>
-      </div>
-    `;
-  });
+// ===== QUESTÕES =====
+function renderQuestoes(filtro) {
+  if (window.renderQuestoes) window.renderQuestoes(filtro);
 }
 
-// --- RENDERIZAR FLASHCARDS (Requer dados.js) ---
-function renderFlashcards(filterStr) {
-  const fcContainer = document.getElementById('fc-container');
-  fcContainer.innerHTML = '';
-  
-  if (typeof cards === 'undefined') {
-    fcContainer.innerHTML = '<p style="color:#ef4444; font-weight:600;">Arquivo dados.js não encontrado ou vazio.</p>';
-    return;
-  }
-  
-  const filtered = filterStr === 'todos' ? cards : cards.filter(c => c.cat === filterStr);
-  
+// ===== FLASHCARDS =====
+function renderFlashcards(filtro) {
+  const container = document.getElementById('fc-container');
+  if (!container || typeof cards === 'undefined') return;
+  container.innerHTML = '';
+  const filtered = filtro === 'todos' ? cards : cards.filter(c => c.cat === filtro);
   filtered.forEach(c => {
-    fcContainer.innerHTML += `
-      <div class="flashcard" onclick="this.classList.toggle('flipped')">
-        <div class="flashcard-inner">
-          <div class="flashcard-front">
-            <span class="fc-tag">${c.tag}</span>
-            <p style="font-size: 15px; font-weight: 500;">${c.q}</p>
-            <span style="font-size:12px; color:#64748b; margin-top:16px;">Tocar para virar</span>
+    container.innerHTML += `
+      <div class="fc-wrap" onclick="this.classList.toggle('flipped')">
+        <div class="fc-inner">
+          <div class="fc-front">
+            <span class="fc-cat-tag">${c.tag}</span>
+            <p class="fc-q">${c.q}</p>
+            <span class="fc-hint">Toque para ver a resposta</span>
           </div>
-          <div class="flashcard-back">
-            <span class="fc-tag">${c.tag}</span>
-            <p style="font-size: 14px; line-height: 1.5;">${c.a}</p>
+          <div class="fc-back">
+            <span class="fc-cat-tag">${c.tag}</span>
+            <p class="fc-q">${c.a}</p>
+            <span class="fc-hint">Toque para voltar</span>
           </div>
         </div>
-      </div>
-    `;
+      </div>`;
   });
 }
 
-function filterCards(categoria, btnElement) {
-  document.querySelectorAll('.btn-filter').forEach(btn => btn.classList.remove('active'));
-  btnElement.classList.add('active');
+function filterCards(categoria, btn) {
+  document.querySelectorAll('#fc-filters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
   renderFlashcards(categoria);
 }
 
-// Inicialização das funções
+// ===== INIT =====
 window.onload = function() {
   renderSchedule();
-  renderQuestoes();
+  if (window.renderQuestoes) renderQuestoes('todas');
   renderFlashcards('todos');
 };
 </script>
